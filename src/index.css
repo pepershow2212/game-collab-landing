@@ -93,6 +93,22 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Inter", sans-serif;
+    background-image: url("/img/fdbbb2d9-7295-4cf0-9ecf-08febd518f42.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
   }
 
   h1,
