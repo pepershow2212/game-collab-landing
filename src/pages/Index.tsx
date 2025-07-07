@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import ServerMonitor from "@/components/ServerMonitor";
 
 const Index = () => {
   return (
@@ -23,6 +24,12 @@ const Index = () => {
               </a>
               <a href="#games" className="hover:text-primary transition-colors">
                 Наши игры
+              </a>
+              <a
+                href="#servers"
+                className="hover:text-primary transition-colors"
+              >
+                Серверы
               </a>
               <a href="#news" className="hover:text-primary transition-colors">
                 Новости
@@ -216,6 +223,11 @@ const Index = () => {
             </Card>
           </div>
         </div>
+      </section>
+
+      {/* Server Monitor Section */}
+      <section id="servers">
+        <ServerMonitor />
       </section>
 
       {/* News Section */}
